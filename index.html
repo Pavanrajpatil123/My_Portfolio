@@ -1,0 +1,228 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <div id="heder">
+        <div class="container">
+            <nav>
+                <!-- <img src="logoo.png" alt="logo"> -->
+                 <h1 class="pf">portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                     <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="heder-text">
+                <p class="thisis">Software Devloper</p>
+                <h1>Hi,I'm <span class="name">Pavanraj Patil</span></h1>
+                <h1></h1>
+                <p class="dis">I am a passionate web developer dedicated to crafting engaging, intuitive, and responsive web experiences. With a keen eye for detail and a drive for innovation, I transform complex ideas into seamless digital solutions. Let's build something extraordinary together, one line of code at a time. </p>
+            </div>
+        </div>
+    </div>
+     <!-- ------- about-------   -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello! I'm Pavanraj Ravindra Patil, a 3rd-year Information Technology engineering student at DBATU University. With a passion for creating dynamic and user-friendly web experiences, I specialize in web development. My goal is to leverage technology to craft innovative solutions and continue growing in the field of web development. </p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Exparience')">Exparience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab " id="skills" >
+                            <ul>
+                                <li><span>web Devlopment</span><br>web app Devlopment</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="Exparirnce">
+                            <ul>
+                                <li><span>web Devlopment</span><br>web app Devlopment</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>DBATU UNIVERSITY</span><br>
+                                    B.Tech in Information Technology<br>
+                                    November 2022 - Present<br>
+                                    Cumulative GPA:6.95 /10 (Till 4th Semester)
+                                    <br>
+                                    <br>
+                                   <span>Higher Secondary School (HSC)</span><br>
+                                    Dhule, India<br>
+                                    Jai Hind Junior College class XII<br>
+                                    Jun 2021 - Jun 2022<br>
+                                    Cumulative %: 73.67
+                                    </li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services-->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis 
+                    omnis provident ipsum tempore harum veritatis. Impedit est consequatur quas,
+                     doloremque nisi eius cum itaque inventore alias magnam autem ratione.</p>
+                     <a href="#">learn more</a>
+                </div>
+                <div>
+
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis 
+                    omnis provident ipsum tempore harum veritatis. Impedit est consequatur quas,
+                     doloremque nisi eius cum itaque inventore alias magnam autem ratione.</p>
+                     <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis 
+                    omnis provident ipsum tempore harum veritatis. Impedit est consequatur quas,
+                     doloremque nisi eius cum itaque inventore alias magnam autem ratione.</p>
+                     <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sun-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around the world 
+                           Downlod it from play store.</p>
+                           <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around the world 
+                           Downlod it from play store.</p>
+                           <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you the talented people around the world 
+                           Downlod it from play store.</p>
+                           <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- contact -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>pavanrajrp18@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7083031177</p>
+                
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/pavanraj-patil-543b42278"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Youe Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msd"></span>
+           </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@2025 PavanrajPatil. All Rights Reserved</p>
+        </div>
+      </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right = " -200px";
+        }
+    </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyjg7D73ODYVGX9fS4PCA-pqto_hzVst2i5dxwgp2L88xE1FcnK2w-VC8NWAcupqn0D/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msd =  document.getElementById("msd")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msd.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msd.innerHTML =""
+                },5000)
+                form.reset()
+             })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html> 
+
+
